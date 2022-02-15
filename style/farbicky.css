@@ -1,0 +1,304 @@
+:root {
+    --ivka-side-bar-background-color: #212121;
+}
+body {
+    font-size: 10px;
+    font-family: Roboto, Arial, sans-serif;
+    background: var(--ivka-side-bar-background-color);
+    margin: 0;
+}
+
+.start {
+    height: 20px;
+    width: 10%;
+    float: left;
+}
+
+.center {
+    width: 74%;
+    float: left;
+}
+
+.end {
+    float: right;
+    width: 16%;
+}
+
+.wrapper {
+    width: 701px;
+    margin: 0 auto;
+}
+
+input[type=search] {
+    width: 577px;
+    height: 40px;
+    background: #0f0f0f;
+    float: left;
+    margin: 10px 0 4px 0;
+}
+
+h1 {
+    position: relative;
+    width: 90px;
+    left: 68px;
+    margin: 0;
+    padding-top: 13px;
+}
+
+details {
+    position: absolute;
+    float: left;
+}
+
+details[open] {
+    position: absolute;
+    background: #000000c4;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+details[open] .sidebar-part .h1 {
+    width: 90px;
+    left: 68px;
+    top: -34px;
+}
+
+details[open] .sidebar-part {
+    background: var(--ivka-side-bar-background-color);
+    width: 200px;
+}
+
+details[open] .start {
+    padding: 0;
+}
+
+summary::marker {
+    content: '\00a0\00a0\00a0\00a0\00a0\2630';
+    font-size: 1.1rem;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+summary {
+    padding-top: 10px;
+}
+
+p.sidebar-part {
+    margin: 0;
+}
+
+.sidebar-part a {
+    font-size: 14px;
+    padding-left: 41px;
+    line-height: 3;
+}
+
+.sidebar-part li:hover {
+    background: #444;
+}
+
+nav {
+    width: 74%;
+    float: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+nav ul {
+    width: max-content;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+nav li a {
+    font-size: 14px;
+    padding: 5px;
+    background: #323232;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.buttons a {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    fill: #fff;
+    margin: 0 10px;
+}
+
+.buttons a:not(:last-of-type) {
+    padding-bottom: 5px;
+}
+
+.buttons:last-child {
+    margin-right: 30px;
+}
+
+.buttons a:last-child {
+    width: 38px;
+    height: 38px;
+    margin-top: 10px;
+}
+
+.buttons img {
+    width: 38px;
+    border-radius: 50%;
+}
+
+.hladak {
+    height: 40px;
+    width: 64px;
+    float: right;
+    margin-top: 10px;
+    background: hsl(0, 0%, 18.82%);
+}
+
+.hladak svg {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.mic {
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+    margin: 0 10px;
+    float: left;
+    background: #0f0f0f;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.mic svg {
+    width: 25px;
+    height: 25px;
+    position:absolute;
+    top:50%;
+    bottom:50%;
+    transform:translate(-50%, -50%);
+}
+
+form {
+    float: left;
+}
+
+aside {
+    width: 10%;
+    float: left;
+}
+
+aside li a {
+    width: 72px;
+    height: 74px;
+    text-align: center;
+    display: inline-block;
+}
+
+aside li a:hover {
+    background:#444;
+}
+
+aside li a svg {
+    width: 72px;
+    height: 24px;
+    fill: white;
+    margin-top: 15px;
+}
+
+main {
+    float: right;
+    width: 90%;
+    margin-top: 27px;
+}
+
+section {
+    width: 360px;
+    height: 300px;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.video-link {
+    width: 360px;
+    height: 300px;
+}
+
+.video-container .big-img {
+    height: 200px;
+    width: 360px;
+}
+
+.video-container section:hover {
+    transform: scale(1.16);
+}
+
+.video-container {
+    max-width: 2160px;
+    margin: 0 auto;
+}
+
+.video-container .heading {
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+    max-height: 4rem;
+    width: 312px;
+    float: right;
+    padding: 12px 0 7px 0;
+    margin: 0;
+}
+
+.video-container .little-img {
+    height: 36px;
+    width: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.video-container .little-img img {
+    height: 36px;
+}
+
+.video-container .left {
+    height: 91px;
+    width: 36px;
+    float: left;
+    padding: 12px 12px 0 0;
+}
+
+.video-container .author {
+    font-size: 12px;
+    opacity: 0.6;
+    width: 312px;
+    float: right;
+}
+
+.video-container .author:hover {
+    opacity: 1;
+}
+
+.video-container .views {
+    font-size: 12px;
+    opacity: 0.6;
+    padding-top: 4px;
+    margin-bottom: 0;
+    width: 312px;
+    float: right;
+}
