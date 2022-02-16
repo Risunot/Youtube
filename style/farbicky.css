@@ -242,10 +242,10 @@ section {
     height: 200px;
     width: 360px;
 }
-
+/* 
 .video-container section:hover {
     transform: scale(1.16);
-}
+} */
 
 .video-container {
     max-width: 2160px;
