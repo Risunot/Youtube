@@ -242,10 +242,10 @@ section {
     height: 200px;
     width: 360px;
 }
-/* 
+
 .video-container section:hover {
     transform: scale(1.16);
-} */
+}
 
 .video-container {
     max-width: 2160px;
@@ -301,4 +301,142 @@ section {
     margin-bottom: 0;
     width: 312px;
     float: right;
+}
+
+iframe {
+    border: 0;
+    margin-left: auto;
+    display: block;
+}
+
+aside.items {
+    float: left;
+    width: 427px;
+    margin-top: 27px;
+}
+
+main.video {
+    float: left;
+    width: 50%;
+}
+
+aside.items section {
+    margin-left: 25px;
+    width: 402px;
+    height: 94px;
+    margin-bottom: 8px;
+}
+
+aside.items section .video-link.left{
+    float: left;
+    width: 168px;
+    height: 94px;
+    position: relative;
+}
+
+aside.items section .big-img{
+    width: 168px;
+    height: 94px;
+}
+
+aside.items section .video-link.right{
+    float: right;
+    width: 234px;
+    height: 94px;
+}
+
+aside.items section .heading {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    font-weight: 700;
+    overflow: hidden;
+    display: block;
+    -webkit-line-clamp: 2;
+    display: box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin: 0;
+    padding-left: 8px;
+}
+
+aside.items section .author {
+    font-size: 12px;
+    opacity: 0.6;
+    padding-left: 8px;
+    color: white;
+}
+
+aside.items section .author:hover {
+    opacity: 1;
+}
+
+aside.items section .views {
+    padding-left: 8px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.time {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 3px;
+    background-color: #030303eb;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    border-radius: 3px;
+}
+
+.see-later,
+.add-to-queve {
+    background: black;
+    position: absolute;
+    bottom: 56px;
+    width: 25px;
+    height: 25px;
+    right: 6px;
+    fill: white;
+    opacity: 0;
+}
+
+.see-later {
+    bottom: 56px;
+    right: 6px;
+}
+
+.add-to-queve {
+    bottom: 29px;
+    right: 6px;
+}
+
+aside.items section:hover .see-later,
+aside.items section:hover .add-to-queve {
+    opacity: 1;
+}
+    
+.see-later:hover:after,
+.add-to-queve:hover:after {
+    background-color: #030303eb;
+    position: absolute;
+    line-height: 1.2;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 3px;
+    padding: 7px;
+    white-space: nowrap;
+}
+
+.add-to-queve:hover:after {
+    content: "Pridať do poradia";
+    right: 33px;
+    top: -2px; 
+}
+
+.see-later:hover:after {
+    content: "Pozrieť neskôr";
+    right: 33px;
+    top: -2px;
 }
