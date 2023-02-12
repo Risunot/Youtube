@@ -35,6 +35,8 @@ input[type=search] {
     background: #0f0f0f;
     float: left;
     margin: 10px 0 4px 0;
+    outline: none;
+    border: 0;
 }
 
 h1 {
